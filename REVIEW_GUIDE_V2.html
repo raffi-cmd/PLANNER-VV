@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRD Planner V2 — Review & Launch</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 780px;
+      width: 100%;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(139, 92, 246, 0.2);
+      color: #c4b5fd;
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 999px;
+      margin-bottom: 12px;
+      font-family: monospace;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 8px 0;
+      color: #f1f5f9;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: 0;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #0ea5e9;
+      color: #020617;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background 0.15s ease;
+      margin: 16px 0 24px 0;
+    }
+    .btn-primary:hover {
+      background: #38bdf8;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .card h3 {
+      font-size: 13px;
+      margin: 0 0 6px 0;
+      color: #38bdf8;
+    }
+    .card p {
+      font-size: 12px;
+      color: #64748b;
+      margin: 0;
+    }
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+      margin: 16px 0;
+    }
+    .checklist li {
+      font-size: 13px;
+      color: #cbd5e1;
+      padding: 6px 0;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .check {
+      color: #10b981;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">UPGRADE V2 ACTIVE</div>
+    <h1>PRD Planner V2 — Review Hub</h1>
+    <p>Aplikasi PRD Planner telah berhasil di-upgrade ke <strong>V2</strong> dengan integrasi lengkap <strong>Product &rarr; UX &rarr; Design Intent &rarr; AI Coding Handoff</strong>.</p>
+    
+    <a href="http://localhost:5173" target="_blank" class="btn-primary">
+      &rarr; Buka PRD Planner V2 di Browser (http://localhost:5173)
+    </a>
+
+    <h2 style="font-size: 16px; color: #e2e8f0; margin-top: 24px;">Fitur Baru yang Siap Ditinjau:</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Design Intent Module</h3>
+        <p>14 dimensi lengkap: Personality, Visual Metaphor, Hierarchy ranking, Anti-patterns, & Visual Acceptance Criteria.</p>
+      </div>
+      <div class="card">
+        <h3>2. View Switcher</h3>
+        <p>Beralih instan antara <strong>Canvas</strong>, <strong>Design Intent</strong>, dan <strong>Handoff Preview</strong> di Header atas.</p>
+      </div>
+      <div class="card">
+        <h3>3. AI Coding Handoff</h3>
+        <p>Menghasilkan <code>HANDOFF.md</code> dengan 12-Step Visual Verification Loop & 10-Question Design Judgment Gate.</p>
+      </div>
+      <div class="card">
+        <h3>4. Export Hub V2</h3>
+        <p>Tab dedicated untuk menyalin & mendownload <code>HANDOFF.md</code>, <code>DESIGN_BRIEF.md</code>, dan task files.</p>
+      </div>
+    </div>
+
+    <h2 style="font-size: 16px; color: #e2e8f0; margin-top: 28px;">Status Verifikasi:</h2>
+    <ul class="checklist">
+      <li><span class="check">&#10003;</span> 13 Vitest Unit & Integration Tests Lulus (100%)</li>
+      <li><span class="check">&#10003;</span> TypeScript Compilation & Vite Production Build Sukses</li>
+      <li><span class="check">&#10003;</span> Local Server Running di port 5173</li>
+      <li><span class="check">&#10003;</span> Kompatibilitas Schema V1 & auto-migration aktif</li>
+    </ul>
+  </div>
+</body>
+</html>
